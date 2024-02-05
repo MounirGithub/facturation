@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS CLIENT (
-    referenceClient VARCHAR(20) PRIMARY KEY,
+    reference_client VARCHAR(20) PRIMARY KEY,
     civilite VARCHAR(50),
     nom VARCHAR(50),
     prenom VARCHAR(50),

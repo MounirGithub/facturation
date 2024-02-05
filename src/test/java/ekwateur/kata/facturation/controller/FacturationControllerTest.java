@@ -19,9 +19,10 @@ class FacturationControllerTest {
     private MockMvc mockMvc;
 
     @Test
+    @DirtiesContext
     void testFacturerClient() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.post("/facturer")
-                        .param("clientId", "EKW12345670")
+                        .param("clientId", "EKW12345000")
                         .param("energyType", "Electricité")
                         .param("quantity", "100")
                         .contentType(MediaType.APPLICATION_JSON))
